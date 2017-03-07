@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="dialog/dialog.css" />
+		<!--<script type="text/html" id="info">
+			<%for(var i=0;i<files.length;i++){%>
+				<li class="content_li" data-id="<%=files[i].id%>">
+		      		<div class=<%=files[i].type%>></div> 
+		      		<strong class="li_font"><%=files[i].title%></strong>
+		      		<input type="text" />
+		 		</li>
+			<%}%>
+		</script>-->
+		<script type="text/html" id="menus">
+			<%for(var i=0;i<menu.length;i++){%>
+				<ul class="menu_ul">
+					<%for(var j=0;j<menu[i].length;j++){%>
+						<li data-id="<%=menu[i][j].id%>">
+				      		<div class=<%=menu[i][j].type%>></div>
+				      		<strong class="li_font"><%=menu[i][j].title%></strong>
+				      		<%if(menu[i][j].isChilds){%>
+				      			<span class="childs">></span>
+				      			<div class="sort_menu" class="childs_files">
+					      			<%for(var k=0;k<menu[i][j].isChilds.length;k++){%>
+					      				<div><%= menu[i][j].isChilds[k] %></div>
+					      			<%}%>
+					      			<span class="border_1"></span>
+									<span class="border_2"></span>
+				      			</div>
+				      		<%}%>
+				      		<%if(menu[i][j].quick){%>
+				      			<span class="quick"><%=menu[i][j].quick%></span>
+				      		<%}%>
+			 			</li>
+			 		<%}%>
+			 	</ul>
+			<%}%>
+		</script>
+	</head>
+	<body>
+		<ul id="content">
+			<li class="content_li"
+				:data-id="item.id"
+				v-for="item,index of list" 
+				:class="item.Name" 
+				@mousedown="drag(item,index,$event)" 
+				@dblclick="delet(item)" 
+				@click="selectLi(item,$event)" 
+				@hover="hoverFn(item)">
+				<div :class="item.type"></div>
+				<strong class="li_font" @click="click_title(item,index,$event)" >{{item.title}}</strong>
+				<input type="text" 
+					v-model="item.title"  
+					:ref=" 'editInput'+index "
+					@blur="editDone(item,index)"
+                    @keyup.13="editDone(item,index)"
+                    @keyup.esc="cancelEdit(item,index)"
+				/>
+			</li>
+		</ul>
+		<footer id="footer">
+			<div class="foot_left">
+				<div id="start"></div>
+			</div>
+			<div class="foot_center">
+				<div class="min_computed">
+					<span></span>
+					<div class="min_tankuang">
+						<div class="xiaojianjian"></div>
+						<div class="xiaojianjian2"></div>
+						<!--<div class="tankuang_div">
+							<header class="tankuang_head">
+								<span></span>
+								<h3 class="tankuang_title">2016-08-22</h3>
+								<div class="close">X</div>
+							</header>
+							<img src="img/img2.jpg" alt="" />
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="foot_right">
+				<div class="foot_tools">
+					<div class="tools">
+						<span class="battery"></span>
+					</div>
+					<div class="tools">
+						<span class="wifi"></span>
+					</div>
+					<div class="tools">
+						<span class="sound"></span>
+					</div>
+					<div class="tools">
+						<span class="view"></span>
+					</div>
+					<div class="tools">
+						<span class="keyboard"></span>
+					</div>
+					<div class="tools_chinese">
+						<span class="chinese"></span>
+					</div>
+					<div class="tools">
+						<span class="sougou"></span>
+					</div>
+				</div>
+				<div class="time">
+					<span class="timer_minute">12:32</span>
+					<span class="timer_year">2015/10/12</span>
+				</div>
+			</div>
+		</footer>
+		<div id="menu">
+			<!--<ul class="menu_ul">
+				<li class="view_li">
+					<div class="self"></div>
+					<span>查看(V)</span>
+				</li>
+			</ul>-->
+			<!--<div id="sort_menu">
+				<div>名称</div>
+				<div>大小</div>
+				<div>项目类型</div>
+				<div>修改日期</div>
+				<div class="border_1"></div>
+				<div class="border_2"></div>
+			</div>-->
+		</div>
+		<ul id="li_menu">
+			<li>开始</li>
+			<li>复制</li>
+			<li>粘贴</li>
+			<li id="delet">删除</li>
+			<li>属性</li>
+		</ul>
+		<ul id="li_menu2">
+			<li>开始</li>
+			<li>复制</li>
+			<li>粘贴</li>
+			<li id="delet2">删除</li>
+			<li>属性</li>
+		</ul>
+		<div class="delet_menu">
+			<div class="reserve">还原</div>
+			<div>剪切</div>
+			<div>删除</div>
+			<div>属性</div>
+		</div>
+		<script src="js/data.js"></script>
+		<script src="js/html.js"></script>
+		<script src="js/tools.js"></script>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/template-native.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="dialog/drag.js"></script>
+		<script src="dialog/dialog2.js"></script>
+		<script src="dialog/dialog.js"></script>
+		<script src ="js/index.js" ></script>
+	</body>
+</html>

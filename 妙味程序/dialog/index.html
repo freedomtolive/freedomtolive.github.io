@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="dialog.css" />
+		<script src="dialog2.js"></script>
+		<script src="../js/jquery-3.1.1.js"></script>
+		<script src="drag.js"></script>
+		
+		<style>
+			#box{
+				position:absolute;
+				top:0;
+				left:0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<input type="button" id="btn" value="按钮一"/>
+		</div>
+	</body>
+	<script>
+		btn.onclick = function(){
+			new Dialog2({
+				title:"图片一",
+				img:"myDelet",
+			})
+		}
+	</script>
+</html>

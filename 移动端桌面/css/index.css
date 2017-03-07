@@ -1,0 +1,534 @@
+body {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes rotateY {
+  0% {
+    -webkit-transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body #section {
+  width: 100%;
+  height: 100%;
+  background: url(../img/af.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .startView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+html body #section .startView .content {
+  padding-top: 2rem;
+}
+html body #section .startView .content .time_font {
+  margin-top: 0.4rem;
+  text-align: center;
+  line-height: 2.8rem;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+html body #section .startView .content .date {
+  text-align: center;
+  line-height: 1.16rem;
+  font-size: 0.76rem;
+  color: #fff;
+  font-weight: bold;
+}
+html body #section .startView .bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 1.2rem;
+  height: 1.08rem;
+}
+html body #section .startView .bottom .foot_font {
+  width: 6.6rem;
+  margin-left: 4rem;
+  font-size: 0.64rem;
+  line-height: 1.08rem;
+  border-radius: 0.32rem;
+  padding: 0 0.4rem;
+  position: relative;
+  text-align: center;
+}
+html body #section .startView .bottom .foot_font span {
+  display: inline-block;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, #ffffff 50%, rgba(255, 255, 255, 0) 65%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  background-position: -580px 0;
+  background-repeat: no-repeat;
+  transition: 4s;
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #section .startView .bottom .foot_font span:hover {
+  background-position: 580px 0;
+}
+html body #section .startView .bottom .huakuai {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.08rem;
+  height: 1.08rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+html body #section .view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+html body #section .view .content-ul {
+  padding-top: 0.76rem;
+  width: 100%;
+}
+html body #section .view .content-ul .content-li {
+  float: left;
+  width: 100%;
+}
+html body #section .view .content-ul .content-li .content-div {
+  float: left;
+  width: 2.4rem;
+  height: 3.32rem;
+  margin-left: 1.08rem;
+}
+html body #section .view .content-ul .content-li .content-div .content-ico {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 10px;
+}
+html body #section .view .content-ul .content-li .content-div .content-font {
+  display: block;
+  height: 0.92rem;
+  font-size: 0.4rem;
+  line-height: 0.92rem;
+  color: #fff;
+  text-align: center;
+}
+html body #section .view .content-ul .content-li .content-div:first-of-type .content-ico {
+  background: url(../img/content1.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .content-ul .content-li .content-div:nth-of-type(2) .content-ico {
+  background: url(../img/logo2.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .content-ul .content-li .content-div:nth-of-type(3) .content-ico {
+  background: url(../img/content2.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .content-ul .content-li .content-div:nth-of-type(4) .content-ico {
+  background: url(../img/content3.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .content-ul .content-li .content-div:nth-of-type(5) .content-ico {
+  background: url(../img/content4.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .content-ul .content-li .content-div:nth-of-type(6) .content-ico {
+  background: url(../img/content5.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .view-foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.84rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+html body #section .view .view-foot .foot-li {
+  float: left;
+  width: 2.4rem;
+  height: 100%;
+  margin-left: 1.08rem;
+}
+html body #section .view .view-foot .foot-li div {
+  margin-top: 0.56rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+html body #section .view .view-foot .foot-li span {
+  display: block;
+  height: 0.88rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.36rem;
+  line-height: 0.88rem;
+}
+html body #section .view .view-foot .foot-li:nth-of-type(1) div {
+  background: url(../img/foot1.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .view-foot .foot-li:nth-of-type(2) div {
+  background: url(../img/foot2.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .view-foot .foot-li:nth-of-type(3) div {
+  background: url(../img/foot3.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body #section .view .view-foot .foot-li:nth-of-type(4) div {
+  background: url(../img/foot4.png) no-repeat;
+  background-size: 100% 100%;
+}
+html body .vr-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  background: #fff;
+  overflow: hidden;
+}
+html body .vr-content .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url(../img/bg/bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  opacity: 0;
+}
+html body .vr-content .logo1 .logoImg {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  width: 30%;
+  margin-top: -15%;
+}
+html body .vr-content .logo1 .logoImg img {
+  display: block;
+  width: 100%;
+  animation: 2s rotateY linear infinite;
+  -webkit-animation: 2s rotateY linear infinite;
+}
+html body .vr-content .logo1 .logoText {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+html body .vr-content .logoImg {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  width: 30%;
+  margin-top: -15%;
+}
+html body .vr-content .logoImg img {
+  display: block;
+  width: 100%;
+  animation: 2s rotateY linear infinite;
+  -webkit-animation: 2s rotateY linear infinite;
+}
+html body .vr-content .logo4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body .vr-content .logo4 .logoIcos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: 2s rotateY linear infinite;
+  animation: 2s rotateY linear infinite;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body .vr-content .logo4 .logoIcos span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -15px 0 0 -15px;
+  width: 30px;
+  height: 30px;
+  background: center center no-repeat;
+  background-size: contain;
+}
+html body .vr-content .logo4 .oLogo4Image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -1.4rem 0 0 -3.96rem;
+  width: 7.88rem;
+  height: 2.8rem;
+}
+html body .vr-content .main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body .vr-content .main .transZ {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body .vr-content .main .transZ .cloud {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body .vr-content .main .transZ .cloud span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -50px 0 0 -100px;
+  width: 200px;
+  height: 100px;
+}
+html body .vr-content .main .transZ .panoBg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body .vr-content .main .transZ .panoBg span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: -585px 0 0 -64.5px;
+  width: 129px;
+  height: 1170px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+html body .vr-content .main .transZ .pano {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body .vr-content .main .transZ .pano .panoDiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+html body .vr-content .main .transZ .pano .panoDiv span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 129px;
+  margin-left: -64.5px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+html body .vr-content .btn {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 9999;
+  width: 2rem;
+  height: 1.6rem;
+  font-size: 0.6rem;
+  line-height: 1.6rem;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+html body .photoView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+html body .photoView .photo-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.8rem;
+  background: #000;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.8rem;
+  text-align: center;
+}
+html body .photoView .photo-head .photo-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.4rem;
+}
+html body .photoView .box {
+  position: absolute;
+  top: 1.8rem;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+}
+html body .photoView .box .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+}
+html body .photoView .box .inner .photo-list li {
+  float: left;
+  width: 6.4rem;
+  height: 6.4rem;
+  margin: 0.5rem;
+  background: url(../img/pics/loadingImg.gif) center center no-repeat;
+}
+html body .photoView .box .inner .photo-list li img {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+html body .photoView .box .inner .foot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0;
+}
+html body .photoView .box .inner .head {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0;
+}
+html body .imgPage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #ccc;
+}
+html body .imgPage header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.8rem;
+  background: #000;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.8rem;
+  text-align: center;
+}
+html body .imgPage header #backBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+html body .imgPage .imgWrap {
+  position: absolute;
+  top: 1.8rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+html body .imgPage #bigImg {
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+  margin-top: -5rem;
+  width: 10rem;
+  height: 10rem;
+}
+html body .imgPage #imgNavs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1.8rem;
+  background: #fff;
+}
+html body .imgPage #imgNavs a {
+  float: left;
+  width: 3.74rem;
+  font-size: .5rem;
+  color: #000;
+  text-align: center;
+  line-height: 1.8rem;
+  border: 1px solid #666;
+  box-sizing: border-box;
+}
+html body .iScrollIndicator {
+  background: #CFC9C9;
+  border-radius: 5px;
+}
+html body .iScrollVerticalScrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+}
