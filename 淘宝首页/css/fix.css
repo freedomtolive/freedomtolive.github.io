@@ -1,0 +1,157 @@
+html{
+	overflow-x:hidden ;
+}
+.head_right span{
+	overflow: hidden;
+}
+span{
+	display:inline;
+	overflow: hidden;
+}
+img{
+	border:0;
+}
+.sousuo .sousuo_input{
+	line-height: 34px;
+}
+.nav_content_left ul li{
+	zoom:1;
+	overflow: hidden;
+}
+.nav_head{
+	overflow: hidden;
+}
+ul li{
+	*vertical-align: top;
+}
+.nav_content_left ul .li_bg{
+	zoom:1;
+}
+.zhuti_btn div,.ad_btn div{
+	overflow: hidden;
+}
+.content_center1 .zhuti_btn di{
+	overflow: hidden;
+}
+.tmall_hd{
+	overflow: hidden;
+}
+.often .often_title{
+	padding-top:9px;
+	height:27px;
+}
+.remen .wenzhang,.remen .fangshai,.remen .tuomao,.remen .jiemaogao,.remen .lianyiqun,.remen .kuzi{
+	margin-right:30px;
+}
+.binfen_li .binfenli_font{
+	padding-bottom:10px;
+}
+.ofen_content_list1 .remen_li{
+	overflow: hidden;
+}
+.pinzhi_bottom a{
+	display: inline;
+}
+.pinzhi_li2,.pinzhi_li4{
+	zoom:1;
+}
+li{
+	overflow: hidden;
+}
+.taoqianggou_left .money{
+	display: inline;
+}
+.ali_app{
+	overflow: hidden;
+}
+.content_right{
+	position:relative;
+	left:10px;
+}
+.toutiao{
+	overflow: hidden;
+}
+.huanyizu{
+	position:relative;
+	left:-30px;
+	top:15px;
+}
+.remai_nav,.remai_nav a{
+	overflow: hidden;
+	padding-left: 8px;
+	padding-right: 9px;
+}
+.remai1_li{
+	zoom:1;
+}
+.remai1_1_top .remai1_top_left{
+	overflow: hidden;
+}
+.money1 div{
+	display: inline;
+	margin-right:8px;
+}
+.money1 span{
+	background-position:0 -970px;
+	overflow: hidden;
+	position:relative;
+	top:-4px;
+}
+.fix{
+	position:absolute;
+	right:10px;
+	bottom:200px;
+	top:expression(eval(document.documentElement.scrollTop+100))
+}
+.money2 span{
+	overflow: hidden;
+	position:relative;
+	top:-4px;
+}
+.huan{
+	overflow: hidden;
+	position:relative;
+	top:-3px;
+	margin-right:8px;
+}
+.content_right .huiyuan{
+	overflow: hidden;
+}
+.nav_head_left .nav_head_bg{
+	overflow: hidden;
+}
+.tianmaobiguang{
+	overflow: hidden;
+	display: inline;
+}
+.tmall_hd .tianmaobiguang{
+	display: inline;
+}
+.shishui_left_top span{
+	position:relative;
+	top:-4px;
+}
+/*.nav_content_left{
+	overflow: hidden;
+}*/
+body{
+	overflow: hidden;
+}
+.ad2{
+	display:inline;
+}
+.jinri_title{
+	overflow: hidden;
+}
+img{
+	overflow:hidden;
+}
+.meizhuangxiu1{
+	overflow: hidden;
+}
+.shishui_head h4{
+	overflow: hidden;
+}
+.taoqianggou1{
+	margin-top:5px;
+}
